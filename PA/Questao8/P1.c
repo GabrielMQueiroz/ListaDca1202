@@ -6,5 +6,5 @@ int main(){
         printf("%d \n",*(vet+i));
     }
 }
-/*O código acima mostra os valores decimais dos valores foram alocados. 
+/*O código acima mostra os valores decimais do vetor a partir de um ponteiro. 
 */
