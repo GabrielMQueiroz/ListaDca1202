@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int comp(const void *a,const void *b){
-    return(*(int*)a- *(int*)b ); 
+float Troca(float *a,float *b){
+    float temp=*a;
+    *a=*b;
+    *b=temp;
 }
 
 int main(void){
@@ -15,9 +17,15 @@ int main(void){
     for(int i =0;i<n;i++){
         scanf("%f",&x[i]);
     }
-    qsort(x,n,sizeof(float),comp);
     for(int i=0;i<n;i++){
-        printf("\n x[%d] == %.1f",i,x[i]);
+        if (&x[i]>&x[i+1]){
+            Troca(&x[i],&x[i+1]);    
+        }else if(&x[i-1]>&x[i]){
+            Troca(&x[i-1],&x[i]);
+            //printf("%f \n bef big: ",x);
+        }
+        //printf("%f",x[i]);
+    printf("\n x[%d] == %f",i,x);
     }
     free(x);
     return 0;
