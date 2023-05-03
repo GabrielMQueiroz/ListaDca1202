@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+<<<<<<< HEAD
 void bubble_sort(float *array, int n) {
     int i, j;
     float temp;
@@ -50,5 +51,34 @@ int main() {
     
     read_and_sort_floats(n);
     
+=======
+float Troca(float *a,float *b){
+    float temp=*a;
+    *a=*b;
+    *b=temp;
+}
+
+int main(void){
+    int n;
+    float *x;
+    printf("Digite quantos valores \n");
+    scanf("%d",&n);
+    x=malloc(n*sizeof(int));
+    printf("Digite os valores: ");
+    for(int i =0;i<n;i++){
+        scanf("%f",&x[i]);
+    }
+    for(int i=0;i<n;i++){
+        if (&x[i]>&x[i+1]){
+            Troca(&x[i],&x[i+1]);    
+        }else if(&x[i-1]>&x[i]){
+            Troca(&x[i-1],&x[i]);
+            //printf("%f \n bef big: ",x);
+        }
+        //printf("%f",x[i]);
+    printf("\n x[%d] == %f",i,x);
+    }
+    free(x);
+>>>>>>> ac84c0f2581609e84854bdcc63be9a7fc863ef53
     return 0;
 }
