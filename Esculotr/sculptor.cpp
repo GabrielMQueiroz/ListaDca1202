@@ -1,5 +1,5 @@
-#include "sculptor.h"
-#include "voxel.h"
+#include "sculptor.hpp"
+#include "voxel.hpp"
 #include <fstream>
 #include <iostream>
 

@@ -1,7 +1,7 @@
 #ifndef SCULPTOR_H
 #define SCULPTOR_H
 
-#include "voxel.h"
+#include "voxel.hpp"
 
 class Sculptor
 {

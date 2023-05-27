@@ -1,4 +1,4 @@
-#include "sculptor.h"
+#include "sculptor.hpp"
 
 int main()
 {

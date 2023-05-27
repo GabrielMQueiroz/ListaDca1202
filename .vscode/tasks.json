@@ -9,7 +9,7 @@
 				"-fdiagnostics-color=always",
 				"-g",
 				"${workspaceFolder}\\Esculotr\\*.cpp",
-                "${workspaceFolder}\\Esculotr\\*.h",
+                "${workspaceFolder}\\Esculotr\\*.hpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 				
