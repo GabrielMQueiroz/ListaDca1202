@@ -3,25 +3,24 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "C/C++: g++.exe build active file",
-			"command": "F:\\MinGW\\bin\\g++.exe",
+			"label": "C/C++: g++ build active file",
+			"command": "/usr/bin/g++",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
-				"${workspaceFolder}\\Esculotr\\*.cpp",
-                "${workspaceFolder}\\Esculotr\\*.hpp",
+				"${workspaceFolder}//Esculotr//*.cpp",
+				"${workspaceFolder}//Esculotr//*.hpp",
 				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
-				
+				"${fileDirname}/${fileBasenameNoExtension}"
 			],
 			"options": {
-				"cwd": "F:\\MinGW\\bin"
+				"cwd": "${fileDirname}"
 			},
 			"problemMatcher": [
 				"$gcc"
 			],
 			"group": "build",
-			"detail": "compiler: F:\\MinGW\\bin\\g++.exe"
+			"detail": "compiler: /usr/bin/g++"
 		}
 	]
 }
