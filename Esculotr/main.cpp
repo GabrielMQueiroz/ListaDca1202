@@ -1,70 +1,92 @@
 #include "sculptor.hpp"
 
-int main()
-{
+int main(){
     Sculptor model(200,200,200);
 
-    model.setColor(209,123,246,0.25);
+    model.setColor(209,123,246,0.7);
+    //
+    //model.putEllipsoid(120,120,120,30,20,15);
+    //model.cutEllipsoid(120,130,120,28,18,13);
     //corpo celualar
-    model.putSphere(50,0,0,10);
-    model.cutSphere(30,30,30,5);
+    model.putSphere(50,120,120,10);
     //braços dendtriticos
     for(int i=0;i<10;i++){
-        model.putSphere(40+i,0,0,3);
+        model.putSphere(40+i,120,120,3);
     }
     for(int i=0;i<15;i++){
-        model.putSphere(65-i,0,0,3);
+        model.putSphere(65-i,120,120,3);
     };
+    model.cutSphere(50,120,120,7);
+    //núcleo
+    model.setColor(100,223,246,0.7);
+    model.putSphere(50,120,120,3);
     //dendritos
+    model.setColor(209,123,246,0.7);
     for (int i = 0; i < 15; i++){
         if(i%2==0){
-            model.putVoxel(0,65+i,2+i);
+            model.putVoxel(120,65+i,122+i);
         }else{
-            model.putVoxel(2+i,65+i,0);
+            model.putVoxel(122+i,65+i,120);
         };
-    }
-    for (int i = 0; i < 15; i++){
-        if(i%2==0){
-            model.putVoxel(2+i,67+i,2+i);
-        }else{
-            model.putVoxel(1+i+1,67+i,1+i+1);
-        };
-    }
-    
-
-
-    /*for(int i=0;i<15;i++){
-        for(int j=0;j<15;j++){
-            for(int k=0;k<15;k++){
-                model.putSphere(5+i,5+j,5+k,2);
-            };
-        model.putSphere(5+i,5+j,5,2);
-        };
-    model.putSphere(5+i,5,5,2);
     };
-    /*model.putBox(25,75,25,50,0,5);
-    model.putBox(25,50,25,75,0,5);
+    for (int i = 0; i < 15; i++){
+        if(i%2==0){
+            model.putVoxel(122+i,67+i,122+i);
+        }else{
+            model.putVoxel(121+i+1,67+i,121+i+1);
+        };
+    };
+    for (int i = 0; i < 8; i++){
+        if(i%2==0){
+            model.putVoxel(118-i,67+i,118-i);
+        }else{
+            model.putVoxel(118-(i-2),67+i,118-(i-2));
+        };
+    };    
+    
+    //baixo
 
-    model.cutBox(30,40,30,40,0,0);
+    for (int i = 0; i < 8; i++){
+        if(i%2==0){
+            model.putVoxel(121+i,37-i,121+i);
+        }else{
+            model.putVoxel(123+(i-2),37-i,123+(i-2));
+        };
+    };
+    for (int i = 0; i < 8; i++){
+        if(i%2==0){
+            model.putVoxel(121-i,37-i,121-i);
+        }else{
+            model.putVoxel(123-(i+2),37-i,123-(i+2));
+        };
+    };
     
 
-    model.setColor(0,255,0,1);
+    for (int i = 0; i < 8; i++){
+        if(i%2==0){
+            model.putVoxel(131-i-i,29,131);
+        }else{
+            model.putVoxel(131-(i+2)+i,29,131);
+        };
+    };
 
-    model.putVoxel(0,0,15);
+    for (int i = 0; i < 8; i++){
+        if(i%2==0){
+            model.putVoxel(131-i-i,29,131-i);
+        }else{
+            model.putVoxel(133-(i+2)+i,29,133+(i-2));
+        };
+    };
 
-    model.setColor(0,255,0,1);
+    for (int i = 0; i < 8; i++){
+        if(i%2==0){
+            model.putVoxel(121-i,29,121-i);
+        }else{
+            model.putVoxel(123-(i+2)+i,29,123+(i-2));
+        };
+    };
 
-    model.putSphere(15,70,30,10);
-
-    model.setColor(0,0,255,1);
-
-    model.putEllipsoid(70,70,70,15,10,15);
-
-    model.cutEllipsoid(80,50,80,5,10,15);
-
-    model.cutSphere(40,40,40,15);
-
-    model.cutVoxel(99,99,9);*/
     model.writeOFF("model.off");
     return 0;
 }
+
