@@ -4,8 +4,8 @@ html {
 /* page base colors */
 --page-background-color: white;
 --page-foreground-color: black;
---page-link-color: #3D578C;
---page-visited-link-color: #4665A2;
+--page-link-color: #6c3d8c;
+--page-visited-link-color: #b981df;
 
 /* index */
 --index-odd-item-bg-color: #F8F9FC;
