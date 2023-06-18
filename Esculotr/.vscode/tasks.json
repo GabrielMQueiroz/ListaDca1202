@@ -8,9 +8,8 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
-                "${workspaceFolder}//parte2//*.cpp",
-                "${workspaceFolder}//parte2//*.hpp",
+                "${workspaceFolder}/parte2/*.cpp",
+                "${workspaceFolder}/parte2/*.hpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
