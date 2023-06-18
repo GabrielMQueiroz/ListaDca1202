@@ -3,7 +3,9 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/Esculotr"
+                "${workspaceFolder}/Esculotr/",
+                "${workspaceFolder}"
+
             ],
             "defines": [
                 "_DEBUG",

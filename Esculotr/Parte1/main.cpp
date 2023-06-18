@@ -7,7 +7,7 @@ int main(){
     //
     //model.putEllipsoid(120,120,120,30,20,15);
     //model.cutEllipsoid(120,130,120,28,18,13);
-    //corpo celualar
+    //corpo celular
     model.putSphere(50,120,120,10);
     //braços dendtriticos
     for(int i=0;i<10;i++){
@@ -84,9 +84,9 @@ int main(){
         }else{
             model.putVoxel(123-(i+2)+i,29,123+(i-2));
         };
+        
     };
 
     model.writeOFF("model.off");
     return 0;
 }
-
