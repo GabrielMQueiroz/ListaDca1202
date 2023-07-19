@@ -1,0 +1,13 @@
+# ninja log v5
+0	282	1689740729638109764	Produtor_autogen/timestamp	be24f2554963561b
+0	282	1689740729638109764	Produtor_autogen/mocs_compilation.cpp	be24f2554963561b
+0	282	1689740729638109764	/home/orion/Desktop/Prog/dca1202/ListaPonteiros/ListaDca1202/Supervisor2/build-Produtor-Desktop_Qt_6_6_0_GCC_64bit-Debug/Produtor_autogen/timestamp	be24f2554963561b
+0	282	1689740729638109764	/home/orion/Desktop/Prog/dca1202/ListaPonteiros/ListaDca1202/Supervisor2/build-Produtor-Desktop_Qt_6_6_0_GCC_64bit-Debug/Produtor_autogen/mocs_compilation.cpp	be24f2554963561b
+283	2444	1689740731806109886	CMakeFiles/Produtor.dir/Produtor_autogen/mocs_compilation.cpp.o	72bc030ddb2b47dc
+283	2512	1689740731870109889	CMakeFiles/Produtor.dir/main.cpp.o	174af60de271f58f
+283	3413	1689740732774109940	CMakeFiles/Produtor.dir/mainwindow.cpp.o	d4bdb5439275b6c5
+3413	3876	1689740733234109966	Produtor	f32e250bc8513aa5
+2	254	1689741035290126931	Produtor_autogen/timestamp	be24f2554963561b
+2	254	1689741035290126931	Produtor_autogen/mocs_compilation.cpp	be24f2554963561b
+2	254	1689741035290126931	/home/orion/Desktop/Prog/dca1202/ListaPonteiros/ListaDca1202/Supervisor2/build-Produtor-Desktop_Qt_6_6_0_GCC_64bit-Debug/Produtor_autogen/timestamp	be24f2554963561b
+2	254	1689741035290126931	/home/orion/Desktop/Prog/dca1202/ListaPonteiros/ListaDca1202/Supervisor2/build-Produtor-Desktop_Qt_6_6_0_GCC_64bit-Debug/Produtor_autogen/mocs_compilation.cpp	be24f2554963561b
