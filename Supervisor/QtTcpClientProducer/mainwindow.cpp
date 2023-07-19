@@ -6,6 +6,7 @@
 #include <QLineEdit>
 #include <QLCDNumber>
 #include <QTextBrowser>
+int timer;
 
     MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent), ui(new Ui::MainWindow){
@@ -64,11 +65,12 @@ void MainWindow::putData(){
     QString timeStr;
 
     timeStr = ui->timelabel->text();
-    timer_t = startTimer((timeStr.toInt())*1000);
+    timer = startTimer((timeStr.toInt())*1000);
 }
 
 void MainWindow::StopData(){
-    killTimer(timer_t);
+
+    killTimer(timer);
 }
 
 void MainWindow::timerEvent(QTimerEvent *e){
@@ -81,7 +83,7 @@ void MainWindow::timerEvent(QTimerEvent *e){
 
     if(min>max){
         ui->textBrowser->insertPlainText("Error! Min value higher than Max\n");
-        killTimer(timer_t);
+        killTimer(timer);
     }
     else{
         if(socket->state()== QAbstractSocket::ConnectedState){

@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../QtTcpClientProducer/mainwindow.h"
+#include "../../QtTcpServer/mainwindow.h"
 #include <QtCore/qmetatype.h>
 
 #if __has_include(<QtCore/qtmochelpers.h>)
@@ -39,55 +39,31 @@ namespace {
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::stringData(
     "MainWindow",
-    "putData",
+    "showMessage",
     "",
-    "tcpConnect",
-    "tcpDisconnect",
-    "getHost",
-    "StopData",
-    "timerEvent",
-    "QTimerEvent*",
-    "e"
+    "msg"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[20];
+    uint offsetsAndSizes[8];
     char stringdata0[11];
-    char stringdata1[8];
+    char stringdata1[12];
     char stringdata2[1];
-    char stringdata3[11];
-    char stringdata4[14];
-    char stringdata5[8];
-    char stringdata6[9];
-    char stringdata7[11];
-    char stringdata8[13];
-    char stringdata9[2];
+    char stringdata3[4];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_stringdata_CLASSMainWindowENDCLASS = {
     {
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
-        QT_MOC_LITERAL(11, 7),  // "putData"
-        QT_MOC_LITERAL(19, 0),  // ""
-        QT_MOC_LITERAL(20, 10),  // "tcpConnect"
-        QT_MOC_LITERAL(31, 13),  // "tcpDisconnect"
-        QT_MOC_LITERAL(45, 7),  // "getHost"
-        QT_MOC_LITERAL(53, 8),  // "StopData"
-        QT_MOC_LITERAL(62, 10),  // "timerEvent"
-        QT_MOC_LITERAL(73, 12),  // "QTimerEvent*"
-        QT_MOC_LITERAL(86, 1)   // "e"
+        QT_MOC_LITERAL(11, 11),  // "showMessage"
+        QT_MOC_LITERAL(23, 0),  // ""
+        QT_MOC_LITERAL(24, 3)   // "msg"
     },
     "MainWindow",
-    "putData",
+    "showMessage",
     "",
-    "tcpConnect",
-    "tcpDisconnect",
-    "getHost",
-    "StopData",
-    "timerEvent",
-    "QTimerEvent*",
-    "e"
+    "msg"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -99,7 +75,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       1,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -107,20 +83,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   50,    2, 0x0a,    1 /* Public */,
-       3,    0,   51,    2, 0x0a,    2 /* Public */,
-       4,    0,   52,    2, 0x0a,    3 /* Public */,
-       5,    0,   53,    2, 0x0a,    4 /* Public */,
-       6,    0,   54,    2, 0x0a,    5 /* Public */,
-       7,    1,   55,    2, 0x0a,    6 /* Public */,
+       1,    1,   20,    2, 0x0a,    1 /* Public */,
 
  // slots: parameters
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::QString,
-    QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 8,    9,
+    QMetaType::Void, QMetaType::QString,    3,
 
        0        // eod
 };
@@ -134,19 +100,9 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSMainWindowENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
-        // method 'putData'
+        // method 'showMessage'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'tcpConnect'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'tcpDisconnect'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'getHost'
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
-        // method 'StopData'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'timerEvent'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QTimerEvent *, std::false_type>
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>
     >,
     nullptr
 } };
@@ -157,13 +113,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->putData(); break;
-        case 1: _t->tcpConnect(); break;
-        case 2: _t->tcpDisconnect(); break;
-        case 3: { QString _r = _t->getHost();
-            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
-        case 4: _t->StopData(); break;
-        case 5: _t->timerEvent((*reinterpret_cast< std::add_pointer_t<QTimerEvent*>>(_a[1]))); break;
+        case 0: _t->showMessage((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
@@ -188,13 +138,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 1;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 1)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 1;
     }
     return _id;
 }

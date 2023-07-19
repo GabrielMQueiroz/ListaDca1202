@@ -17,9 +17,10 @@ public:
   explicit MainWindow(QWidget *parent = 0);
   ~MainWindow();
   
-  void tcpConnect();
 public slots:
   void putData();
+  void tcpConnect();
+
   void tcpDisconnect();
   QString getHost();
   void StopData();

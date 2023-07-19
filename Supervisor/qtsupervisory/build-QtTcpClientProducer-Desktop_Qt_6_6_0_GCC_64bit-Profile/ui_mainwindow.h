@@ -109,6 +109,10 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(Minslider, SIGNAL(valueChanged(int)), MinLcd, SLOT(display(int)));
         QObject::connect(Maxslider, SIGNAL(valueChanged(int)), MaxLcd, SLOT(display(int)));
+        QObject::connect(DisconnectButton, &QPushButton::clicked, lineEdit, qOverload<>(&QLineEdit::clear));
+        QObject::connect(ConnectButton, &QPushButton::clicked, lineEdit, qOverload<>(&QLineEdit::copy));
+        QObject::connect(DisconnectButton, &QPushButton::clicked, lineEdit, qOverload<>(&QLineEdit::clear));
+        QObject::connect(DisconnectButton, &QPushButton::clicked, textBrowser, qOverload<>(&QTextBrowser::clear));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi

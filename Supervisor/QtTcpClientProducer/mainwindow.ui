@@ -239,5 +239,69 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>DisconnectButton</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ConnectButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>58</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DisconnectButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>221</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DisconnectButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>textBrowser</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>86</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
 </ui>
