@@ -200,6 +200,7 @@ DIST          = /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/spec_post.prf \
+		../../QtTcpServer/.qmake.stash \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -373,6 +374,7 @@ Makefile: ../../QtTcpServer/QtServerMultithread.pro /home/orion/Qt/6.6.0/gcc_64/
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -533,6 +535,7 @@ Makefile: ../../QtTcpServer/QtServerMultithread.pro /home/orion/Qt/6.6.0/gcc_64/
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/qt_config.prf:
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/toolchain.prf:
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/default_pre.prf:
@@ -1514,7 +1517,66 @@ mainwindow.o: ../../QtTcpServer/mainwindow.cpp ../../QtTcpServer/mainwindow.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qmutex.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qtsan_impl.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/QMap \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/QVariant \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QApplication \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qapplication.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qcoreapplication.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qeventloop.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qcoreapplication_platform.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qfuture.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qfutureinterface.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qresultstore.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qfuture_impl.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qbasicfuturewatcher.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qthreadpool.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qrunnable.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qexception.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qpromise.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qguiapplication.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qinputmethod.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qguiapplication_platform.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QGroupBox \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qgroupbox.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qframe.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QHBoxLayout \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qboxlayout.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qlayout.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qgridlayout.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QListWidget \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qlistwidget.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qlistview.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qstyleoption.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qvalidator.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qregularexpression.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qslider.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qabstractslider.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qstyle.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qtabbar.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qrubberband.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QMenuBar \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qmenubar.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qmenu.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QStatusBar \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qstatusbar.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QTextBrowser \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qtextbrowser.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qtextedit.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qtextdocument.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qtextoption.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qtextcursor.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qtextformat.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qpen.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QToolBar \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qtoolbar.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../../QtTcpServer/mainwindow.cpp
 
 myserver.o: ../../QtTcpServer/myserver.cpp ../../QtTcpServer/myserver.h \

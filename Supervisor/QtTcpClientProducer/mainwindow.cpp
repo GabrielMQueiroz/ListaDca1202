@@ -62,8 +62,6 @@ QString MainWindow::getHost(){
 }
 
 void MainWindow::putData(){
-
-
     timer = ui->TimeLcd->value();
 
     timer = startTimer((timer)*1000);
