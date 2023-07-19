@@ -34,14 +34,15 @@ public:
     QSlider *Maxslider;
     QSlider *Minslider;
     QPushButton *DisconnectButton;
-    QSlider *horizontalSlider;
+    QSlider *TimeSlide;
     QLineEdit *lineEdit;
     QLabel *label;
     QLabel *label_2;
     QPushButton *ConnectButton;
     QPushButton *StopButton;
     QTextBrowser *textBrowser;
-    QLabel *timelabel;
+    QLCDNumber *TimeLcd;
+    QLabel *label_3;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
 
@@ -72,13 +73,15 @@ public:
         DisconnectButton = new QPushButton(centralWidget);
         DisconnectButton->setObjectName("DisconnectButton");
         DisconnectButton->setGeometry(QRect(190, 30, 89, 25));
-        horizontalSlider = new QSlider(centralWidget);
-        horizontalSlider->setObjectName("horizontalSlider");
-        horizontalSlider->setGeometry(QRect(10, 200, 160, 16));
-        horizontalSlider->setOrientation(Qt::Horizontal);
+        TimeSlide = new QSlider(centralWidget);
+        TimeSlide->setObjectName("TimeSlide");
+        TimeSlide->setGeometry(QRect(90, 200, 91, 20));
+        TimeSlide->setMaximum(3);
+        TimeSlide->setOrientation(Qt::Horizontal);
         lineEdit = new QLineEdit(centralWidget);
         lineEdit->setObjectName("lineEdit");
         lineEdit->setGeometry(QRect(20, 0, 261, 25));
+        lineEdit->setMaxLength(50000);
         label = new QLabel(centralWidget);
         label->setObjectName("label");
         label->setGeometry(QRect(210, 60, 67, 17));
@@ -94,9 +97,12 @@ public:
         textBrowser = new QTextBrowser(centralWidget);
         textBrowser->setObjectName("textBrowser");
         textBrowser->setGeometry(QRect(290, 0, 241, 271));
-        timelabel = new QLabel(centralWidget);
-        timelabel->setObjectName("timelabel");
-        timelabel->setGeometry(QRect(200, 200, 67, 17));
+        TimeLcd = new QLCDNumber(centralWidget);
+        TimeLcd->setObjectName("TimeLcd");
+        TimeLcd->setGeometry(QRect(210, 190, 71, 31));
+        label_3 = new QLabel(centralWidget);
+        label_3->setObjectName("label_3");
+        label_3->setGeometry(QRect(10, 200, 67, 17));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName("menuBar");
@@ -113,6 +119,7 @@ public:
         QObject::connect(ConnectButton, &QPushButton::clicked, lineEdit, qOverload<>(&QLineEdit::copy));
         QObject::connect(DisconnectButton, &QPushButton::clicked, lineEdit, qOverload<>(&QLineEdit::clear));
         QObject::connect(DisconnectButton, &QPushButton::clicked, textBrowser, qOverload<>(&QTextBrowser::clear));
+        QObject::connect(TimeSlide, SIGNAL(actionTriggered(int)), TimeLcd, SLOT(display(int)));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -126,7 +133,7 @@ public:
         label_2->setText(QCoreApplication::translate("MainWindow", "Max Value:", nullptr));
         ConnectButton->setText(QCoreApplication::translate("MainWindow", "Connect", nullptr));
         StopButton->setText(QCoreApplication::translate("MainWindow", "Stop", nullptr));
-        timelabel->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "Timing", nullptr));
     } // retranslateUi
 
 };

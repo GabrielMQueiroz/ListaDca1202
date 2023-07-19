@@ -62,10 +62,11 @@ QString MainWindow::getHost(){
 }
 
 void MainWindow::putData(){
-    QString timeStr;
 
-    timeStr = ui->timelabel->text();
-    timer = startTimer((timeStr.toInt())*1000);
+
+    timer = ui->TimeLcd->value();
+
+    timer = startTimer((timer)*1000);
 }
 
 void MainWindow::StopData(){

@@ -190,6 +190,7 @@ DIST          = /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/spec_post.prf \
+		../../QtTcpClientProducer/.qmake.stash \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -361,6 +362,7 @@ Makefile: ../../QtTcpClientProducer/QtTcpClientProducer.pro /home/orion/Qt/6.6.0
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/orion/Qt/6.6.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -524,6 +526,7 @@ Makefile: ../../QtTcpClientProducer/QtTcpClientProducer.pro /home/orion/Qt/6.6.0
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/qt_config.prf:
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/toolchain.prf:
 /home/orion/Qt/6.6.0/gcc_64/mkspecs/features/default_pre.prf:
@@ -1181,13 +1184,35 @@ mainwindow.o: ../../QtTcpClientProducer/mainwindow.cpp ../../QtTcpClientProducer
 		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qtimer.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qbasictimer.h \
 		ui_mainwindow.h \
-		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/QDateTime \
-		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qdatetime.h \
-		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qcalendar.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/QVariant \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QApplication \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qapplication.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qcoreapplication.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qeventloop.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qcoreapplication_platform.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qfuture.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qfutureinterface.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qmutex.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qdeadlinetimer.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qelapsedtimer.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qtsan_impl.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qresultstore.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qfuture_impl.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qbasicfuturewatcher.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qthreadpool.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qthread.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qrunnable.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qexception.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qpromise.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qguiapplication.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qinputmethod.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qlocale.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qguiapplication_platform.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QLCDNumber \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qlcdnumber.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qframe.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QLabel \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qlabel.h \
-		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qframe.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qpicture.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qtextdocument.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QLineEdit \
@@ -1196,12 +1221,25 @@ mainwindow.o: ../../QtTcpClientProducer/mainwindow.cpp ../../QtTcpClientProducer
 		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qtextformat.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qpen.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtGui/qtextoption.h \
-		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QLCDNumber \
-		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qlcdnumber.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QMenuBar \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qmenubar.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qmenu.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QPushButton \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qpushbutton.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QSlider \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qslider.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qabstractslider.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QTextBrowser \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qtextbrowser.h \
 		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qtextedit.h \
-		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qabstractscrollarea.h
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QToolBar \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/qtoolbar.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtWidgets/QWidget \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/QDateTime \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qdatetime.h \
+		/home/orion/Qt/6.6.0/gcc_64/include/QtCore/qcalendar.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../../QtTcpClientProducer/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
